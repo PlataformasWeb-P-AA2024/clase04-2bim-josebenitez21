@@ -78,3 +78,7 @@ footer{
   background: #5E5E5E;
   color: #FFF;
 }
+
+.top_menu ul li a {
+  color: green
+};

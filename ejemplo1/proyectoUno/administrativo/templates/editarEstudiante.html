@@ -1,9 +1,14 @@
+{%extends 'master.html'%}
 <h2>Editar Estudiante</h3>
+{%block title%}
+Editar estudiante
+{%endblock title%}
 
+  {% block content %}
 <form action="" method="post">
   {% csrf_token %}
   {{formulario.as_p}}
   <p><input type='submit' value='Actualizar'/></p>
 </form>
-
+{% endblock content %}
 [<a href="{% url 'index' %}">inicio</a>]

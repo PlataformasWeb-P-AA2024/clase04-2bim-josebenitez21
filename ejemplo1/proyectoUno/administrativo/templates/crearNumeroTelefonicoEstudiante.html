@@ -1,3 +1,8 @@
+{%extends 'master.html'%}
+{%block title%}
+Crear Numero telefónico estudiante
+{%endblock title%}
+{% block content %}
 <h2>Crear Número Telefónico para {{estudiante}}</h3>
 
 <form action="" method="post">
@@ -5,5 +10,6 @@
   {{formulario.as_p}}
   <p><input type='submit' value='Agregar'/></p>
 </form>
+{% endblock content %}
 
 [<a href="{% url 'index' %}">inicio</a>]
